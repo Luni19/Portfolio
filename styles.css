@@ -6,6 +6,17 @@
 font-family: 'DM Sans', sans-serif;
 font-family: 'Poppins', sans-serif; 
 */
+:root{
+ --black: #171718;
+ --black-border:#171718;    
+ --white: #fff;
+ --purple: #5C62EC;
+ --dark-bg: var(--black);
+ --dark-border: var(--black-border);
+ --header-text: var(--white);
+ --main-color:var(--purple);
+}
+
 
 html, body{
 font-family: 'DM Sans', sans-serif;
@@ -19,10 +30,10 @@ padding: 0 15px;
 
 
 .navigation{
- background-color: #171718;
+ background-color: var(--dark-border);
  padding: 20px 0;
  border-bottom: 1px solid #26292D;
- color: #fff;
+ color: var(--white);
 }
 .nav-row{
  display: flex;
@@ -34,7 +45,7 @@ padding: 0 15px;
 
 }
 .logo{
-    color: #FFF;
+    color: var(--white);
     font-family: 'Poppins', sans-serif; 
     font-size: 24px;
     font-weight: 400;
@@ -55,5 +66,70 @@ line-height: normal;
 
 }
 .nav-item-link{
-    color: #FFF;
+    color: var(--white);
+}
+
+.nav-item-link:active{
+position: relative;
+}
+.nav-item-link::before{
+    content: "";
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: var(--main-color);
+    position: absolute;
+    left: 0;
+    top: 100%;
+}
+
+
+/* HERO-SECTION */
+
+
+.hero-section{
+    background-color: var(--dark-bg);
+    color: var(--header-text);
+    min-height: 695px;
+    padding: 40px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.hero-conteiner{
+    
+}
+.hero-wrapper{
+    max-width: 660px;
+    padding: 0 15px;
+
+
+}
+
+.tittle{
+    color: var(--White, #FAFAFA);
+font-size: 60px;
+letter-spacing: -0.5px;
+margin-bottom: 20px;
+
+}
+.Konstantin{
+    color: var(--main-color);
+}
+.frontend{
+    color: var(--White, #FAFAFA);
+font-size: 40px;
+}
+.tittle-text{
+    color: var(--Blanco, #FFF);
+font-size: 18px;
+font-weight: 500;
+line-height: 24px; 
+letter-spacing: -0.5px;
+margin-bottom: 40px;
+}
+.cv-button{
+
 }
