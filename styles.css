@@ -20,6 +20,9 @@ font-family: 'Poppins', sans-serif;
 
 html, body{
 font-family: 'DM Sans', sans-serif;
+height: 100%;
+display: flex;
+flex-direction: column;
 }
 
 .conteiner{
@@ -41,6 +44,7 @@ padding: 0 15px;
  column-gap: 30px;
  align-items: center;
  justify-content: space-between;
+ flex-wrap: wrap;
 
 
 }
@@ -207,6 +211,7 @@ border-radius: 10px;
     background-color: var(--black);
     color: var(--white);
     padding: 60px 0 50px;
+    margin-top: auto;
 }
 .footer-wrapper{
     display: flex;
@@ -303,4 +308,30 @@ column-gap: 10px;
     margin-bottom: 20px;
     font-weight: 700;
     text-align: center;
+}
+
+@media (max-width: 620px){
+
+    .tittle{
+        font-size: 30px;
+    }
+    .frontend{
+        font-size: 30px;
+    }
+    .project-section{
+        padding: 40px 0;
+    }
+    .projects-text{
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+    .projects{
+        justify-content: center; 
+    }
+    .project-tittle{
+        font-size: 22px;
+    }
+    .footer{
+        padding: 40px 0 30px;
+    }
 }
